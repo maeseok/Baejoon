@@ -1,0 +1,33 @@
+a = int(input())
+b = int(input())
+if(a>=20):
+    if(0.25*b>2000):
+        print(int(b*0.75))
+    else:
+        if(b<2000):
+            print(0)
+        else:
+            print(b-2000)
+elif(a>=15):
+    if(0.1*b>2000):
+        print(int(b*0.9))
+    else:
+        if(b<2000):
+            print(0)
+        else:
+            print(b-2000)
+elif(a>=10):
+    if(0.1*b>500):
+        print(int(b*0.9))
+    else:
+        if(b<500):
+            print(0)
+        else:
+            print(b-500)
+elif(a>=5):
+    if(b<500):
+        print(0)
+    else:
+        print(b-500)
+else:
+    print(b)
